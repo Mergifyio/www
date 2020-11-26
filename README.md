@@ -1,2 +1,1 @@
-# www
-Resources for https://mergify.io landing page
+This repository contains files served by [Mergify landing page](https://mergify.io).
