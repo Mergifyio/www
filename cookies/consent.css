@@ -8,32 +8,29 @@
     overflow: hidden;
     position: fixed;
     bottom: 30px;
-    right: 30px;
+    /* Do not collide with Crisp widget */
+    right: 100px;
     display: none;
 }
 .cookieConsentContainer .cookieDesc p {
     margin: 0;
     padding: 0;
-    color: #FFFFFF;
     font-size: 13px;
     line-height: 20px;
     display: block;
     margin-top: 10px;
-} .cookieConsentContainer .cookieDesc a {
-    color: #FFFFFF;
-    text-decoration: underline;
 }
+
 .cookieConsentContainer a.cookieButton {
     display: inline-block;
-    color: #FFFFFF;
     font-size: 14px;
     font-weight: bold;
-    margin-top: 14px;
     background: #000000;
     box-sizing: border-box;
     padding: 10px 20px;
     text-align: center;
     transition: background 0.3s;
+    margin-left: 2em;
 }
 
 .cookieConsentContainer a.cookieButton:hover {
