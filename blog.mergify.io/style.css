@@ -29,3 +29,11 @@ body {
 .nav-post-title {
     top: 11px;
 }
+
+.post-card-image {
+    background: none;
+}
+
+.post-full-image {
+    background: none;
+}
