@@ -2,6 +2,8 @@
 @import url('https://cdn.jsdelivr.net/npm/prism-themes@1.1.0/themes/prism-ghcolors.css');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+/* Mailchimp form */
+@import url('https://cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css');
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -36,4 +38,17 @@ body {
 
 .post-full-image {
     background: none;
+}
+
+#mc_embed_signup {
+    margin-bottom: 10em;
+    background: #fafafa;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    border: solid 1px #C9E7F8;
+    box-shadow: 5px 5px #C9E7F8;
+}
+#mc_embed_signup label {
+    font-size: 2.5em;
+    margin-bottom: 1em;
 }
