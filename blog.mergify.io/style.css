@@ -41,14 +41,79 @@ body {
 }
 
 #mc_embed_signup {
-    margin-bottom: 10em;
+    margin-top: 2em;
     background: #fafafa;
-    padding-top: 5em;
-    padding-bottom: 5em;
+    padding-top: 2em;
+    padding-bottom: 2em;
     border: solid 1px #C9E7F8;
     box-shadow: 5px 5px #C9E7F8;
 }
+
 #mc_embed_signup label {
     font-size: 2.5em;
     margin-bottom: 1em;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cta {
+    margin-bottom: 10em;
+    background: #fafafa;
+    padding-top: 4em;
+    padding-bottom: 3em;
+    border: solid 1px #C9E7F8;
+    box-shadow: 5px 5px #C9E7F8;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#cta a.button {
+    padding: 12px 24px;
+    border: 1px transparent;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    margin: 30px;
+}
+
+
+#cta a.button.primary {
+    color: #fff;
+    background-color: #067ABD;
+    box-shadow: 5px 5px #2A6F96;
+}
+#cta a.button.primary:hover {
+    background-color: #53A9DB;
+    box-shadow: 4px 4px #2A6F96;
+}
+
+#cta a.button.secondary {
+    color: #000;
+    border: 1px #034870 solid;
+    background-color: transparent;
+    box-shadow: 5px 5px #034870;
+}
+#cta a.button.secondary:hover {
+    background-color: white;
+    box-shadow: 4px 4px #034870;
+}
+
+#cta #title {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    text-align: center;
+    line-height: 1.2em;
+}
+
+#cta #subtitle {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    text-align: center;
+    color: #888;
+    margin: 50px;
 }
