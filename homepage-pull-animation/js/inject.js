@@ -1,6 +1,6 @@
 
 const imagerobot = document.querySelector('img[alt="robot+bouton.png"]');
-imagerobot.parentElement.innerHTML = `
+imagerobot.parentElement.parentElement.innerHTML = `
 <div class="a-merg">
         <div class="a-merg__robot">
             <div class="a-merg__robot__head">
