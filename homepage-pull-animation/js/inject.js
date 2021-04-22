@@ -73,7 +73,7 @@ imagerobot.parentElement.parentElement.innerHTML = `
                 </div>
             </div>
             <div class="a-merg__item__content">
-                <span class="a-merg__item__title">Fix typo</span>
+                <span class="a-merg__item__title">Improve this</span>
                 <span class="a-merg__item__tag a-merg__item__tag--enhancement">enhancement</span>
                 <span class="a-merg__item__infos">#2188 opened 2 minutes ago by GuillaumeOj</span>
             </div>
@@ -94,7 +94,7 @@ imagerobot.parentElement.parentElement.innerHTML = `
                 </div>
             </div>
             <div class="a-merg__item__content">
-                <span class="a-merg__item__title">Better documentation</span>
+                <span class="a-merg__item__title">Fix typo</span>
                 <span class="a-merg__item__tag a-merg__item__tag--documentation">documentation</span>
                 <span class="a-merg__item__infos">#2221 opened 1 minute ago by CamClrt</span>
             </div>
