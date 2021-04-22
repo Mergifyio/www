@@ -48,7 +48,6 @@ VARS
 */
 
 
-
 /*
 body{
 	display: flex;
@@ -57,7 +56,6 @@ body{
 	height: 100vh;
 }
 */
-
 .a-merg{
 	display: flex;
 	width: 100%;
@@ -277,7 +275,7 @@ body{
 
 	&.next{
 		@include transition ( all .5s 1s ease-out );
-		@include transform ( translateY(-100px) );
+		@include transform ( translateY(-95px) );
 	}
 }
 
@@ -416,7 +414,7 @@ body{
 	font-family: 'Open sans', sans-serif;
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 1050px){
 
 	.a-merg__robot{
 		width: 100px;
