@@ -121,4 +121,8 @@ body {
 /* twemoji */
 img.emoji {
     width: 1.3em;
+    display: initial;
+    margin: initial;
+    height: initial;
+    max-width: initial;
 }
