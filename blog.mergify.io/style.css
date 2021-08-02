@@ -61,15 +61,13 @@ body {
 }
 
 #cta {
-    margin-bottom: 10em;
-    background: #fafafa;
-    padding-top: 4em;
+    background: var(--ghost-accent-color);
+    padding-top: 3em;
     padding-bottom: 3em;
-    border: solid 1px #C9E7F8;
-    box-shadow: 5px 5px #C9E7F8;
-    width: 90%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 3em;
+    color: white;
 }
 
 #cta a.button {
@@ -83,24 +81,12 @@ body {
 
 
 #cta a.button.primary {
-    color: #fff;
+    color: #ddd;
     background-color: #067ABD;
-    box-shadow: 5px 5px #2A6F96;
-}
-#cta a.button.primary:hover {
-    background-color: #53A9DB;
-    box-shadow: 4px 4px #2A6F96;
 }
 
-#cta a.button.secondary {
-    color: #000;
-    border: 1px #034870 solid;
-    background-color: transparent;
-    box-shadow: 5px 5px #034870;
-}
-#cta a.button.secondary:hover {
-    background-color: white;
-    box-shadow: 4px 4px #034870;
+#cta a.button.primary:hover {
+    background-color: #fff;
 }
 
 #cta #title {
@@ -114,7 +100,7 @@ body {
     font-size: 1.2em;
     margin-bottom: 1em;
     text-align: center;
-    color: #888;
+    color: #eee;
     margin: 50px;
 }
 
