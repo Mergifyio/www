@@ -7,6 +7,11 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.article {
+    /* remove default padding at bottom */
+    padding-bottom: 0;
+}
+
 .post-full-content h1, .post-full-content h2, .post-full-content h3, .post-full-content h4, .post-full-content h5, .post-full-content h6
 {
     font-family: 'Poppins', sans-serif;
