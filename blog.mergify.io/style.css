@@ -3,22 +3,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
-body {
-    font-family: 'Poppins', sans-serif;
+:root {
+    /* Fonts */
+    --font-sans-serif: -apple-system, BlinkMacSystemFont, "Poppins", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    --font-serif: Lora, Georgia, Times, serif;
+    --font-mono: Menlo, Courier, monospace;
 }
 
 article {
     /* remove default padding at bottom */
     padding-bottom: 0;
-}
-
-article h1, article h2, article h3, article h4, article h5, article h6
-{
-    font-family: 'Poppins', sans-serif;
-}
-
-article {
-    font-family: 'Lora', serif;
 }
 
 .site-nav-left {
