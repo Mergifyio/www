@@ -100,7 +100,7 @@ imagerobot.parentElement.parentElement.innerHTML = `
             </div>
         </div>
         <!-- item ------------------------------------->
-        <div class="a-merg__item a-merg__item--waiting">
+        <div class="a-merg__item">
             <div class="a-merg__item__thumb-cont">
                 <div class="a-merg__thumb a-merg__thumb--requested">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25.95" height="30.48" viewBox="0 0 25.95 30.48">
@@ -120,8 +120,6 @@ imagerobot.parentElement.parentElement.innerHTML = `
                 <span class="a-merg__item__infos">#2221 opened 1 minute ago by CamClrt</span>
             </div>
         </div>
-
-
     </div>
 </div>
 `;
