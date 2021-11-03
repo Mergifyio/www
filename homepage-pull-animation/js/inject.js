@@ -78,7 +78,7 @@ imagerobot.parentElement.parentElement.innerHTML = `
                 <span class="a-merg__item__infos">#2188 opened 2 minutes ago by GuillaumeOj</span>
             </div>
         </div>
-        </div><!-- item ------------------------------------->
+        <!-- item ------------------------------------->
         <div class="a-merg__item">
             <div class="a-merg__item__thumb-cont">
                 <div class="a-merg__thumb a-merg__thumb--requested">
