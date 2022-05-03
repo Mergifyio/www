@@ -117,6 +117,12 @@ body {
     margin-top: 0px!important;
 }
 
+/* This is only set on non-full pages but we set it everywhere */
+.notion-header__content {
+    max-width: 900px;
+    margin:auto;
+}
+
 .notion-embed {
     margin: 35px 0 !important;
 }
@@ -380,7 +386,6 @@ ul>.notion-list-item:before {
     flex-shrink: 0 !important;
     position: sticky !important;
     position: -webkit-sticky !important;
-    top: 70px !important;
     overflow: auto !important;
     padding: 15px!important;
     padding-top: 25px!important;
@@ -459,6 +464,7 @@ ul>.notion-list-item:before {
     background: var(--color-ui-hover-bg)!important;
 }
 
+/* content column */
 .notion-root>.notion-column-list>.notion-column:nth-child(2) {
     padding-top: 30px!important;
     padding-bottom: 100px !important;
@@ -466,7 +472,7 @@ ul>.notion-list-item:before {
     width: 100% !important;
     padding-left: 60px!important;
     padding-right: 60px!important;
-    max-width: 750px !important;
+    max-width: 900px !important;
     min-width: 500px !important;
     margin: 0 auto !important;
     z-index: 10!important;
@@ -969,7 +975,7 @@ p {
     .notion-root>.notion-column-list .notion-column-list:last-child .notion-column {
         height: 100px!important;
     }
-    
+
     .super-navbar__item {
         padding: 12px!important;
     }
