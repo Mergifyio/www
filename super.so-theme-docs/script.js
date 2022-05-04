@@ -35,7 +35,7 @@ function textToAnchorLink(text) {
 }
 
 function addHeaderLink () {
-  [...document.querySelectorAll("h1.notion-heading")].map(item => {
+  [...document.querySelectorAll("h1.notion-heading, h2.notion-heading, h3.notion-heading")].map(item => {
     let span = document.createElement('span');
     let anchor_id = textToAnchorLink(item.textContent);
     span.id = anchor_id;
