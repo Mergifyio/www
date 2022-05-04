@@ -1,4 +1,3 @@
-@import url('https://cdn.jsdelivr.net/npm/prism-themes@1.4.1/themes/prism-ghcolors.css');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
@@ -128,4 +127,8 @@ img.emoji {
     margin: initial;
     height: initial;
     max-width: initial;
+}
+
+.gh-content pre {
+    background: inherit;
 }
