@@ -394,7 +394,7 @@ ul>.notion-list-item:before {
     height: calc(100vh - 70px) !important;
     flex-shrink: 0 !important;
     position: sticky !important;
-    position: -webkit-sticky !important;
+    top: 70px !important;
     overflow: auto !important;
     padding: 15px!important;
     padding-top: 25px!important;
@@ -493,9 +493,7 @@ ul>.notion-list-item:before {
     height: calc(100vh - 70px) !important;
     flex-shrink: 0 !important;
     position: sticky !important;
-    position: -webkit-sticky !important;
     top: 70px !important;
-    /*position: fixed;*/
     padding: 30px!important;
     padding-top: 25px!important;
     border-left: 1px solid var(--color-border-default)!important;
