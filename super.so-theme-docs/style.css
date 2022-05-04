@@ -852,7 +852,7 @@ p {
     border-radius: 20px!important;
 }
 
-.page-active {
+.notion-page.page-active {
     background: var(--color-ui-hover-bg)!important;
 }
 
