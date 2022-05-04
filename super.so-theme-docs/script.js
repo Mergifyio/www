@@ -30,10 +30,14 @@ function onPageLoad() {
 
 document.addEventListener("DOMContentLoaded", onPageLoad);
 
+function textToAnchorLink(text) {
+  return text.replace(/[\W_]+/g,"-");
+}
+
 function addHeaderLink () {
   [...document.querySelectorAll("h1.notion-heading")].map(item => {
     let span = document.createElement('span');
-    let anchor_id = item.textContent.replace(/[\W_]+/g,"-");
+    let anchor_id = textToAnchorLink(item.textContent);
     span.id = anchor_id;
     span.className = "notion-heading__anchor"
     let ahref = document.createElement('a');
@@ -46,3 +50,12 @@ function addHeaderLink () {
 }
 
 document.addEventListener("DOMContentLoaded", addHeaderLink);
+
+function fixToCLinks () {
+  [...document.querySelectorAll("li.notion-table-of-contents__item > a")].map(item => {
+    let anchor_id = textToAnchorLink(item.querySelector("span span span").textContent)
+    item.href = "#" + anchor_id;
+  });
+}
+
+document.addEventListener("DOMContentLoaded", fixToCLinks);
