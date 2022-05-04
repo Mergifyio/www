@@ -29,3 +29,20 @@ function onPageLoad() {
 }
 
 document.addEventListener("DOMContentLoaded", onPageLoad);
+
+function addHeaderLink () {
+  [...document.querySelectorAll("h1.notion-heading")].map(item => {
+    let span = document.createElement('span');
+    let anchor_id = item.textContent.replace(/[\W_]+/g,"-");
+    span.id = anchor_id;
+    span.className = "notion-heading__anchor"
+    let ahref = document.createElement('a');
+    ahref.href = "#" + anchor_id;
+    ahref.textContent = "🔗";
+    ahref.className = "headerlink";
+    item.appendChild(span);
+    item.insertAdjacentElement("beforeend", ahref);
+  });
+}
+
+document.addEventListener("DOMContentLoaded", addHeaderLink);
