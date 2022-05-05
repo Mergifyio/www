@@ -4,7 +4,7 @@ function onPageChange(callback) {
 
   const config = { subtree: true, characterData: true };
 
-  const callback = function(mutationsList, observer) {
+  const mutation_callback = function(mutationsList, observer) {
     for (const mutation of mutationsList) {
       if (mutation.type === 'characterData') {
         callback()
@@ -12,7 +12,7 @@ function onPageChange(callback) {
     }
   };
 
-  const observer = new MutationObserver(callback);
+  const observer = new MutationObserver(mutation_callback);
   observer.observe(header, config);
 }
 
