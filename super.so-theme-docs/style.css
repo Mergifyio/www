@@ -478,7 +478,6 @@ ul>.notion-list-item:before {
     padding-right: 60px!important;
     max-width: 900px !important;
     min-width: 500px !important;
-    margin: 0 auto !important;
     z-index: 10!important;
 }
 
