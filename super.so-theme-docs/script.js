@@ -68,8 +68,11 @@ onPageLoad(addHeaderLink);
 // Replace ToS links to the headerlink we inserted with `addHeaderLink`
 function fixToCLinks () {
   [...document.querySelectorAll("li.notion-table-of-contents__item > a")].map(item => {
-    let anchor_id = textToAnchorLink(item.querySelector("span span span").textContent)
-    item.href = "#" + anchor_id;
+    const sub_span = item.querySelector("span span span");
+    if (sub_span !== null) {
+      let anchor_id = textToAnchorLink(sub_span.textContent)
+      item.href = "#" + anchor_id;
+    }
   });
 }
 
