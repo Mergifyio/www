@@ -13,7 +13,7 @@ img.emoji {
     --cta-color-text: #424b55!important;
     --color-text-default: #424b55;
     --callout-border-radius: 20px!important;
-    --inline-code-bg-color: #53A9DB!important;
+    --inline-code-bg-color: rgba(28, 160, 241, 0.1)!important;
     --content-width: 1500px!important;
     /**/
     --color-code-block: #fafafa !important;
@@ -303,7 +303,7 @@ code {
 
 .notion-semantic-string .code {
     background: var(--inline-code-bg-color) !important;
-    color: var(--color-text-default) !important;
+    color: #53A9DB!important;
     font-size: 0.9em !important;
     white-space: pre-wrap !important;
     padding: 2px 6px !important;
