@@ -301,7 +301,7 @@ code {
     background: 0 0 !important;
 }
 
-.notion-semantic-string.code {
+.notion-semantic-string > .code {
     background: var(--inline-code-bg-color) !important;
     color: var(--color-text-default) !important;
     font-size: 0.9em !important;
