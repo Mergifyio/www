@@ -484,7 +484,6 @@ ul>.notion-list-item:before {
 
 .notion-root>.notion-column-list>.notion-column:nth-child(3) {
     margin-left: 0 !important;
-    min-width: 130px !important;
     height: calc(100vh - 70px) !important;
     flex-shrink: 0 !important;
     position: sticky !important;
@@ -495,6 +494,8 @@ ul>.notion-list-item:before {
     z-index: 10!important;
     background: var(--color-bg-default)!important;
     overflow: auto!important;
+    min-width: px !important;
+    width: 270px!important;
 }
 
 .notion-root>.notion-column-list>.notion-column:nth-child(3) div p:first-child {
