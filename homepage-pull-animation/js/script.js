@@ -11,61 +11,61 @@ const amRobotLoading = document.querySelector('.a-merg__robot__loading');
 
 let amWaitingItem;
 
-window.addEventListener('load', function(){
+window.addEventListener('load', function () {
 
-	setTimeout(function(){
-		amWaitingItem = amItems[amItems.length-1];
+	setTimeout(function () {
+		amWaitingItem = amItems[amItems.length - 1];
 		amAddItem(amWaitingItem);
-	},300);
+	}, 300);
 });
 
 
-function amAddItem(el){
+function amAddItem(el) {
 	el.classList.remove('a-merg__item--waiting');
 
-	setTimeout(function(){
+	setTimeout(function () {
 		amRobot.classList.add('a-merg__robot--surprised');
 
-		setTimeout(function(){
+		setTimeout(function () {
 			amRobot.classList.remove('a-merg__robot--surprised');
 			amScann();
 
-		},800);
+		}, 800);
 
-	},200);
+	}, 200);
 };
 
-function amScann(){
+function amScann() {
 
 	amRobot.classList.add('a-merg__robot--scanning');
 	amItems[0].classList.add('a-merg__item--scanning');
 
-	setTimeout(function(){
+	setTimeout(function () {
 		amRobot.classList.remove('a-merg__robot--scanning');
 		amItems[0].classList.remove('a-merg__item--scanning');
 		amValidate();
-		
-	},3000);
+
+	}, 3000);
 
 };
 
-function amValidate(){
+function amValidate() {
 	amItems[0].classList.add('a-merg__item--merged');
 	amWrapper.classList.add('next');
 
-	setTimeout(function(){
+	setTimeout(function () {
 		amRobot.classList.add('a-merg__robot--success');
-	},200);
+	}, 200);
 
-	setTimeout(function(){
+	setTimeout(function () {
 		amRobot.classList.remove('a-merg__robot--success');
 		amEnd(amItems[0]);
-	},800);
+	}, 800);
 };
 
-function amEnd(el){
+function amEnd(el) {
 
-	setTimeout(function(){
+	setTimeout(function () {
 		el.classList.remove('a-merg__item--merged');
 		el.classList.add('a-merg__item--waiting');
 		amWrapper.classList.remove('next');
@@ -74,8 +74,8 @@ function amEnd(el){
 		el.remove();
 		amWrapper.appendChild(dupNode);
 		amItems = Array.from(document.querySelectorAll('.a-merg__item'));
-		setTimeout(function(){
-			amAddItem(amItems[amItems.length-1]);
-		},300);
-	},1000);
+		setTimeout(function () {
+			amAddItem(amItems[amItems.length - 1]);
+		}, 300);
+	}, 1000);
 };
