@@ -425,9 +425,8 @@ VARS
 }
 
 .a-merg__item__tag--documentation {
-	background-color: #C9E7F8;
-	border: 1px solid #034870;
-	color: #034870;
+	background: radial-gradient(#00b4d8, lighten(#00b4d8, 10%));
+	color: whitesmoke;
 }
 
 .a-merg__item__infos {
@@ -442,7 +441,7 @@ VARS
 
 	.a-merg__robot {
 		width: 100px;
-		height: 30px;
+		height: 40px;
 		margin-top: 14px;
 		border-width: 3px;
 	}
@@ -468,6 +467,7 @@ VARS
 
 	.a-merg__robot__shadow {
 		margin-top: 10px;
+		width: 30px;
 	}
 
 	.a-merg__robot__loading {
