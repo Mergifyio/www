@@ -4,6 +4,7 @@
 // ===============================================================
 
 let amItems = Array.from(document.querySelectorAll('.a-merg__item'));
+let amItemsWaiting = Array.from(document.querySelectorAll('.a-merg__item.a-merg__item--waiting'));
 const amWrapper = document.querySelector('.a-merg__items-list');
 const amRobot = document.querySelector('.a-merg__robot');
 const amRobotHead = document.querySelector('.a-merg__robot__head');
@@ -14,7 +15,7 @@ let amWaitingItem;
 window.addEventListener('load', function () {
 
 	setTimeout(function () {
-		amWaitingItem = amItems[amItems.length - 1];
+		amWaitingItem = amItems[amItems.length - amItemsWaiting.length];
 		amAddItem(amWaitingItem);
 	}, 300);
 });
@@ -75,7 +76,7 @@ function amEnd(el) {
 		amWrapper.appendChild(dupNode);
 		amItems = Array.from(document.querySelectorAll('.a-merg__item'));
 		setTimeout(function () {
-			amAddItem(amItems[amItems.length - 1]);
+			amAddItem(amItems[amItems.length - amItemsWaiting.length]);
 		}, 300);
 	}, 1000);
 };

@@ -415,19 +415,21 @@ VARS
 }
 
 .a-merg__item__tag--bug {
-	background: radial-gradient(#e63946, lighten(#e63946, 10%));
-	color: whitesmoke;
+    background: #e63946;
+    color: lighten(#e63946, 30%);
+    border: 1px solid ligten(#e63946, 10%);
 }
 
 .a-merg__item__tag--enhancement {
-	background: radial-gradient(#457b9d, lighten(#457b9d, 10%));
-	color: whitesmoke;
+    background: #457b9d;
+    color: lighten(#457b9d, 30%);
+    border: 1px solid lighten(#457b9d, 30%);
 }
 
 .a-merg__item__tag--documentation {
-	background-color: #C9E7F8;
-	border: 1px solid #034870;
-	color: #034870;
+    background-color: #a9d73f;
+    color: darken(#a9d73f, 30%);
+    border: 1px solid darken(#a9d73f, 10%);
 }
 
 .a-merg__item__infos {
