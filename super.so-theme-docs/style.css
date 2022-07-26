@@ -1010,7 +1010,12 @@ p {
         height: 30px!important;
     }
     .notion-root>.notion-column-list>.notion-column:nth-child(1) {
-        display: none!important;
+        height: fit-content !important;
+        position: static !important;
+        width: 100% !important;
+    }
+    .notion-column-list:first-child {
+        flex-direction: column !important;
     }
     .notion-root>.notion-column-list>.notion-column:nth-child(1).show-nav {
         opacity: 1 !important;
